@@ -1,4 +1,4 @@
-fun main(args: Array<String>) {
+fun main() {
     val magazins = Katalog("Verniy")
     val drink:Products = Drink(5)
     val eat:Products = Eat(19)
