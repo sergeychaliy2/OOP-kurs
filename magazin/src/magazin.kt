@@ -1,4 +1,5 @@
 import java.io.File
+import java.io.PrintWriter
 interface Mag{
     fun MagazName():String
 
