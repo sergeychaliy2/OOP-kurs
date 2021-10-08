@@ -27,11 +27,13 @@ class Katalog(private val magazname:String):Mag {
         list.add(products)
          println(i)
          i += 1
+         File("product.txt").appendText("\$products")
     }
      override fun minusProduct(products: Products) {
         list.remove(products)
          println(i)
          i -= 1
+      
     }
 }
 
