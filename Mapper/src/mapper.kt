@@ -4,32 +4,32 @@ interface Mapper<I,O> {
 
 class CatalogMapper: Mapper<Product,CatalogModel> {
     override fun map(input: Product): CatalogModel {
-        val car = CatalogModel(
+        val prod = CatalogModel(
             input.model,
             input.price,
-            input.speed
+            input.speed,
         )
-        return car
+        return prod
     }
 }
-class DetailsMapper:Mapper<Product,PriceModel>{
-    override fun map(input:Product):PriceModel{
-        val car=PriceModel(
+class OkMapper:Mapper<Product,OkModel>{
+    override fun map(input:Product):OkModel{
+        val prod=OkModel(
             input.model,
             input.price,
             input.info,
-            input.speed
+            input.speed,
         )
-        return car
+        return prod
     }
 }
 class PriceMapper:Mapper<Product,PriceCatalog>{
     override fun map(input:Product): PriceCatalog {
-        val car=PriceCatalog(
+        val prod=PriceCatalog(
             input.model,
             input.price,
             input.info,
-        )
-        return car
+            input.korobka)
+        return prod
     }
 }
