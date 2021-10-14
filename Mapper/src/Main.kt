@@ -3,7 +3,9 @@ fun main(){
 
     val catalogMapper:Mapper<Product,CatalogModel>=CatalogMapper()
     val detailsMapper:Mapper<Product,PriceModel>=DetailsMapper()
-    val specialMapper:Mapper<Product,CatalogModel>=CatalogMapper()
+    val specialMapper:Mapper<Product,CatalogModel>=PriceMapper()
     println(CatalogMapper.map(auto))
-    println(PriceMapper.map(auto))
+    println(DetailsMapper.map(auto))
+     println(PriceMapper.map(auto))
+    
 }
