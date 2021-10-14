@@ -1,11 +1,16 @@
 fun main(){
-    val auto=Product("Tesla", 123, "Top", 400,
+    val auto=Product(
+        "Tesla",
+        123,
+        "Top",
+        400,
+        "auto")
 
-    val catalogMapper:Mapper<Product,CatalogModel>=CatalogMapper()
-    val detailsMapper:Mapper<Product,PriceModel>=DetailsMapper()
-    val specialMapper:Mapper<Product,CatalogModel>=PriceMapper()
-    println(CatalogMapper.map(auto))
-    println(DetailsMapper.map(auto))
-     println(PriceMapper.map(auto))
-    
+    val catalogMapper:Mapper <Product,CatalogModel> =CatalogMapper()
+    val priceMapper:Mapper <Product,PriceCatalog> =PriceMapper()
+    val okMapper:Mapper <Product,OkModel> =OkMapper()
+    println(catalogMapper.map(auto))
+    println(priceMapper.map(auto))
+    println(okMapper.map(auto))
+
 }
