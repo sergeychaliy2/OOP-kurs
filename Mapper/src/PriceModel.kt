@@ -1,4 +1,4 @@
-data class PriceModel(
+data class OkModel(
     val model: String,
     val price: Int,
     val info: String,
