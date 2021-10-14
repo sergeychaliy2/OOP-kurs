@@ -3,5 +3,6 @@ class Product(
     val price: Int,
     val info: String,
     val speed: Int,
+    val korobka:String,
 
     )
