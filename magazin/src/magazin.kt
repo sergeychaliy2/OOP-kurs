@@ -40,16 +40,24 @@ class Katalog(private val magazname:String):Mag {
 
 abstract class Products(val price:Int ){
     abstract val alh:double
+    open fun alhog(norma: Float, alh: Float) {
+        if (norma<alh){
+            println("error")
+
+        }else{
+            println("OK")
+        }
+    }
     abstract val product:String
     override fun toString():String{
         return "$product $price"
     }
 }
-class Drink(price:Int,val norma:double=0.3) : Products(price){
-    override val alh:double=0.2
-    val alhogol:Boolean=alh>norm
-    Println(alhogol)
+class Drink(price:Int,norma:Float,alh: Float) : Products(price){
     override val product = "pepsi"
+    override fun alhog(norma: Float, alh: Float) {
+        super.alhog(norma, alh)
+    }
 }
 class Eat(price: Int):Products(price){
     override val product = "brad"
