@@ -2,7 +2,7 @@ import java.io.File
 import java.io.PrintWriter
 
 class Katalog(private val magazname:String){
-    val list = mutableListOf<Products>()
+   private val list = mutableListOf<Products>()
     var i:Int = 0
     override fun MagazName():String {
         return "${magazname}"
