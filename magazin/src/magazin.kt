@@ -1,20 +1,7 @@
 import java.io.File
 import java.io.PrintWriter
-interface Mag{
-    fun MagazName():String
 
-     fun KolVo() {
-        println("no mame")
-    }
-    fun plusProduct(products: Products){
-        println("no products")
-    }
-    fun minusProduct(products: Products){
-        println("no products")
-    }
-
-}
-class Katalog(private val magazname:String):Mag {
+class Katalog(private val magazname:String){
     val list = mutableListOf<Products>()
     var i:Int = 0
     override fun MagazName():String {
