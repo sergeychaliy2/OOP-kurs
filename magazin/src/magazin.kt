@@ -4,25 +4,28 @@ import java.io.PrintWriter
 class Katalog(private val magazname:String){
    private val list = mutableListOf<Products>()
     var i:Int = 0
-    override fun MagazName():String {
+    fun MagazName():String {
         return "${magazname}"
     }
-   override fun KolVo(){
+   fun KolVo(){
        println(i)
        toString()
     }
-     override fun plusProduct(products: Products) {
+     fun plusProduct(products: Products) {
         list.add(products)
          println(i)
          i += 1
          File("product.txt").appendText("\$products")
     }
-     override fun minusProduct(products: Products) {
+     fun minusProduct(products: Products) {
         list.remove(products)
          println(i)
          i -= 1
       
     }
+     fun getName(){
+      println(list.toString() )
+     }
 }
 
 abstract class Products(val price:Int ){
@@ -36,6 +39,9 @@ abstract class Products(val price:Int ){
         }
     }
     abstract val product:String
+   override toString():String{
+      println($product)
+   }
     override fun toString():String{
         return "$product $price"
     }
