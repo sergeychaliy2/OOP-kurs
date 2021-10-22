@@ -1,12 +1,12 @@
 import java.io.File
 import java.io.PrintWriter
 
-interface MyInterface{
+interface Log{
     fun makeLoger(message: String)
 }
-Class Product{
+class Factory{
      companion object{
-    fun getLoger(loger: Int):MyInterface{
+    fun getLoger(loger: Int):Log{
         if(loger<=3){
             val prod=FLog()
             return prod
@@ -19,12 +19,12 @@ Class Product{
   }
 }
 
-class FLog: MyInterface{
+class FLog: Log{
     override fun makeLoger(message: String){
         File("log.txt").appendText("")
     }
 }
 
-class SLog:MyInterface{
+class SLog:Log{
     override fun makeLoger(message: String){
        println(message)
