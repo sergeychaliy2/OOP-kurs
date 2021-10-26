@@ -16,7 +16,7 @@ class Katalog(private val magazname:String){
         list.add(products)
          println(i)
          i += 1
-         File("product.txt").appendText("\$products")
+         File(path).appendText("\$products")
     }
      fun minusProduct(products: Products) {
         list.remove(products)
