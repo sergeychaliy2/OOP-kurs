@@ -2,6 +2,7 @@ import java.io.File
 import java.io.PrintWriter
 
 class Katalog(private val magazname:String){
+   val path="product.txt"
    private val list = mutableListOf<Products>()
     var i:Int = 0
     fun MagazName():String {
