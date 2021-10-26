@@ -7,12 +7,12 @@ interface Log{
 class Factory{
      companion object{
     fun getLoger(loger: Int):Log{
-        if(loger<=3){
-            val prod=FLog()
+        if(loger==1){
+            val prod=SLog()
             return prod
         }
         else{
-            val prod=SLog()
+            val prod=FLog()
             return prod
         }
     }
