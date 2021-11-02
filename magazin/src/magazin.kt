@@ -1,56 +1,45 @@
 import java.io.File
-import java.io.PrintWriter
-
-class Katalog(private val magazname:String){
-   val path="product.txt"
-   private val list = mutableListOf<Products>()
-    var i:Int = 0
-    fun MagazName():String {
-        return "${magazname}"
+interface Shop{
+    fun ShopName():String
+    fun Number()
+    fun plusProduct(products: Products)
+    fun minusProduct(products: Products)
+}
+class Catalog(private val shop_name:String):Shop {
+     private val list = mutableListOf<Products>()
+    override fun ShopName():String {
+        return shop_name
     }
-   fun KolVo(){
-       println(i)
+   override fun Number(){
+       println(list.size)
        toString()
     }
-     fun plusProduct(products: Products) {
+     override fun plusProduct(products: Products) {
         list.add(products)
-         println(i)
-         i += 1
-         File(path).appendText("\$products")
+
     }
-     fun minusProduct(products: Products) {
+     override fun minusProduct(products: Products) {
         list.remove(products)
-         println(i)
-         i -= 1
-      
+
     }
-     fun getName(){
-      println(list.toString() )
-     }
 }
 
-abstract class Products(val price:Int ){
-    abstract val alh:double
-    open fun alhog(norma: Float, alh: Float) {
-        if (norma<alh){
-            println("error")
-
-        }else{
-            println("OK")
-        }
-    }
+abstract class Products(private val price:Int ){
     abstract val product:String
-   override toString():String{
-      println($product)
-   }
+    open fun alhog() {}
     override fun toString():String{
         return "$product $price"
     }
 }
-class Drink(price:Int,norma:Float,alh: Float) : Products(price){
+class Drink(price:Int, private val norm:Float, private val dose: Float) : Products(price){
     override val product = "pepsi"
-    override fun alhog(norma: Float, alh: Float) {
-        super.alhog(norma, alh)
+    override fun alhog() {
+        if (norm<dose){
+            println("poorly")
+
+        }else{
+            println("good")
+        }
     }
 }
 class Eat(price: Int):Products(price){
@@ -59,3 +48,4 @@ class Eat(price: Int):Products(price){
 class Candies(price: Int):Products(price){
     override val product = "sweets"
 }
+
