@@ -1,6 +1,6 @@
 fun main() {
-    val apple: Products = Json.encodeToString(Apple( info = "apple very good")
-    val banana: Products =Json.encodeToString(Banana(info="banana very good")
+    val apple: Products = Json.encodeToString(Apple())
+    val banana: Products =Json.encodeToString(Banana())
     val obj = DaoProducts()
 obj.writeProduct(apple)
     obj.writeProduct(banana)
