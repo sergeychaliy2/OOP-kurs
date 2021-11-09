@@ -2,8 +2,8 @@ import java.io.File
 
 abstract class Products
 
-data class Apple(private val nameProd: String = "Apple", private val info: String): Products()
-data class Banana(private val name: String ="Banana", private val info: String): Products()
+data class Apple(private val nameProd: String = "Apple", private val info: String="apple very good"): Products()
+data class Banana(private val name: String ="Banana", private val info: String="banana very old"): Products()
 
 
 interface Dao{
