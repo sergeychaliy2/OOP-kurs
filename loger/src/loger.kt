@@ -21,8 +21,8 @@ enum class LoggerType {
 class Factory {
     fun getLogger(type: LoggerType) {
         return with (type) {
-            LoggerType.CONSOLE_LOGGER =>SLog()
-            LoggerType.TEXTFILE_LOGGER =>FLog()
+            LoggerType.CONSOLE_LOGGER ->SLog()
+            LoggerType.TEXTFILE_LOGGER ->FLog()
         }
     }
 }
