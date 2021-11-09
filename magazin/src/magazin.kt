@@ -12,14 +12,13 @@ class Catalog(private val shop_name:String):Shop {
     }
    override fun Number(){
        println(list.size)
-       toString()
     }
      override fun plusProduct(products: Products) {
-        list.add(products)
+        list.add(products.name)
 
     }
      override fun minusProduct(products: Products) {
-        list.remove(products)
+        list.remove(products.name)
 
     }
 }
@@ -27,20 +26,12 @@ class Catalog(private val shop_name:String):Shop {
 abstract class Products(private val price:Int ){
     abstract val product:String
     open fun alhog() {}
-    override fun toString():String{
+     fun toString():String{
         return "$product $price"
     }
 }
-class Drink(price:Int, private val norm:Float, private val dose: Float) : Products(price){
+class Drink(price:Int,) : Products(price){
     override val product = "pepsi"
-    override fun alhog() {
-        if (norm<dose){
-            println("poorly")
-
-        }else{
-            println("good")
-        }
-    }
 }
 class Eat(price: Int):Products(price){
     override val product = "brad"
