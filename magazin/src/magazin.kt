@@ -25,7 +25,6 @@ class Catalog(private val shop_name:String):Shop {
 
 abstract class Products(private val price:Int ){
     abstract val product:String
-    open fun alhog() {}
      fun toString():String{
         return "$product $price"
     }
