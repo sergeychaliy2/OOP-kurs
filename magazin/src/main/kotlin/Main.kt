@@ -1,10 +1,9 @@
 fun main(args: Array<String>) {
     val shop = Catalog("loyal")
-    val drink:Products = Drink(5, 0.2F,0.3F)
+    val drink:Products = Drink()
     val eat:Products = Eat(19)
     Candies(20)
     shop.plusProduct(drink)
     shop.plusProduct(eat)
-    shop.Number()
-    drink.alhog()
+    shop.number()
 }
