@@ -21,7 +21,7 @@ interface Dao{
      }
      override fun writeProduct(prod: Products) {
          list.add(prod)
-         JSON.parse(DaoProducts.serializer(), list "\n")
+         JSON.parse(DaoProducts.serializer(), list,"\n")
          File(path).WriteText(list)
      }
 
