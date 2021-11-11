@@ -14,7 +14,7 @@ interface Dao{
 }
   class DaoProducts: Dao {
      private val path="text.txt"
-     private val list= mutableListOf<String>()
+     private val list= mutableListOf<Products>()
      override fun readProduct()  {
          File("text.txt").useLines { lines -> lines.forEach { list.add(it) }}
          list.forEach { println(">  " + it) }
@@ -22,7 +22,7 @@ interface Dao{
      override fun writeProduct(prod: Products) {
          list.add(prod)
          JSON.parse(DaoProducts.serializer(), list)
-         File(path).appendText(list)
+         File(path).WriteText(list)
      }
 
  }
