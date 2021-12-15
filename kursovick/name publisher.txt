@@ -1,0 +1,202 @@
+0	Pilgrim's Journey to Heavenly Land
+1	Robinson Crusoe
+2	Gulliver's Travels
+3	Clarissa
+4	The story of Tom Jones, the foundling
+5	The life and opinions of Tristram Shandy, a gentleman
+6	Emma
+7	Frankenstein, or Modern Prometheus
+8	Abbey of nightmares
+9	The Adventure Tale of Arthur Gordon Pym
+10	Sibilla
+11	Jane Eyre
+12	Wuthering Heights
+13	Vanity Fair
+14	David Copperfield
+15	Red letter
+16	Moby Dick, or White Whale
+17	Alice's Adventures in Wonderland
+18	Moonstone
+19	Little women
+20	Middlemarch
+21	How we live now
+22	The Adventures of Huckleberry Finn
+23	Kidnapped
+24	Three in the same boat, not counting the dog
+25	Sign of four
+26	The Picture of Dorian Grey
+27	New street of literary bohemia
+28	Jude the Obscure
+29	Scarlet Token of Valor
+30	Dracula
+31	heart of Darkness
+32	Sister Kerry
+33	Kim
+34	Call of the ancestors
+35	Golden bowl
+36	Adrian VII
+37	The wind in the willows
+38	Mr. Polly's story
+39	Zuleika Dobson
+40	A soldier is always a soldier
+41	Thirty nine steps
+42	Rainbow
+43	The burden of human passions
+44	The age of innocence
+45	Ulysses
+46	Babbit
+47	Trip to India
+48	Gentlemen Prefer Blondes
+49	Mrs Dalloway
+
+
+
+1850	1
+1850	1
+1851	1
+25.08.1963	1
+25.08.1963	3
+25.08.1963	1
+25.08.1963	1
+25.08.1963	3
+25.08.1963	1
+25.08.1963	1
+25.08.1963	4
+25.08.1963	1
+25.08.1963	2
+25.08.1963	1
+25.08.1963	3
+25.08.1963	2
+25.08.1963	1
+25.08.1963	1
+25.08.1963	1
+25.08.1963	2
+25.08.1963	1
+25.08.1963	3
+25.08.1963	1
+25.08.1963	1
+25.08.1963	3
+25.08.1963	1
+25.08.1963	1
+25.08.1963	2
+25.08.1963	1
+25.08.1963	3
+25.08.1963	1
+25.08.1963	2
+25.08.1963	1
+25.08.1963	3
+25.08.1963	2
+25.08.1963	1
+
+
+
+1	John Benyan
+2	Daniel Defoe
+3	Jonathan Swift
+4	Samuel Richardson
+5	Henry Fielding
+6	Lawrence Stern
+7	Jane Austen
+8	Mary Shelley
+9	Thomas Love Peacock
+10	Edgar Allan Poe
+11	Benjamin Disraeli
+12	Charlotte Bronte
+13	Emily Brontë
+14	William Thackeray
+15	Charles Dickens
+16	Nathaniel Hawthorne
+17	German Melville
+18	Lewis Carroll
+19	Wilkie Collins
+20	Louise May Alcott
+21	George Eliot
+22	Anthony Trollope
+23	Mark Twain
+24	Robert Louis Stevenson
+25	Jerome Klapka Jerome
+26	Arthur Conan Doyle
+27	Oscar Wilde
+28	George Gissing
+29	Thomas Hardy
+30	Stephen Crane
+31	"
+Bram Stoker"
+32	Joseph Conrad
+33	Theodore Dreiser
+34	Rudyard Kipling
+35	Jack London
+36	Henry James
+37	Frederick Rolf
+38	Kenneth Graham
+39	H.G. Wells
+40	Max Beerbohm
+41	Ford Madox Ford
+42	John Bucken
+43	David Herbert Lawrence
+44	Somerset Maugham
+45	Edith Wharton
+46	"
+James Joyce"
+47	Sinclair Lewis
+48	Edward Morgan Forster
+49	Anita Luz
+50	Virginia wolfe
+
+
+
+
+
+1678	1	romance
+1719	2	Adventure
+1726	1	Adventure
+1748	3	romance
+1749	2	romance
+1759	1	romance
+1816	1	drama
+1818	3	romance
+1818	1	romance
+1838	1	romance
+1845	1	journalism
+1847	1	romance
+1847	1	romance
+1848	2	romance
+1850	1	romance
+1850	1	drama
+1851	1	romance
+1865	1	Adventure
+1868	3	romance
+"1868-1869
+"	1	drama
+1871-1872	1	romance
+1875	3	drama
+1884-1885	1	romance
+1886	1	romance
+1889	4	humor
+"1890
+"	1	detective
+1891	2	romance
+1891	1	journalism
+1895	3	romance
+1895	2	fantastic
+1897	1	"fantastic
+"
+1899	1	romance
+1900	1	romance
+1901	2	romance
+1903	1	story
+1904	3	romance
+1904	1	drama
+1908	1	story
+1910	3	humor
+1911	1	romance
+1915	1	chronicle
+1915	2	story
+1915	1	romance
+1915	3	romance
+1920	1	drama
+1922	2	romance
+1922	1	romance
+1924	3	romance
+1925	2	humor
+1925	1	romance
