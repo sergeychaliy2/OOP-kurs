@@ -1,0 +1,77 @@
+SELECT vookNmae,
+release,
+FIRST_VALUE(bookName)
+OVER(ORDER BY release)AS SmallestRelease,
+NTH_VALUE(bookName,2)
+OVER(ORDER BY release)AS SecondSmallestRelease
+FROM books
+WHERE kol_vo<3;
+--------------------------------------
+SELECT bookName, kol_vo,
+count(DISTINCT theme) AS kolvo_theme
+FROM books
+WHERE bookName LIKE '+M%' OR bookName LIKE '+A%'
+GROUP BY bookName
+HAVING count(release)>1838
+ORDER BY kolvo_theme;
+---------------------------------
+SELECT
+bookId,bookName,kol vo
+FROM 
+book
+RIGHT JOIN table_s USING(bookId)
+WHERE order_kol IS NULL
+ORDER BY order_kol
+LIMIT 16;
+----------------------------------
+SELECT orderId,PublisherId,date
+FROM publisher
+LEFT JOIN orders USING (PublisherId)
+WHERE date='22.04.1979'
+ORDER BY orderId;
+-------------------------------------
+SELECT bookNmae, bookId,count(theme)AS темы
+FROM books
+WHERE bookName in ('Sibilla','Emma')
+GROUP BY bookName
+Having count(theme)='drama'
+ORDER BY темы, bookName;
+--------------------------------
+SELECT bookId,bookName,theme
+FROM books
+WHERE theme='romance'
+HAVING count(kol_vo)>=2
+ORDER BY theme;
+----------------------------
+SELECT bookName, count(kol_vo) as kol 
+FROM books
+WHERE bookName not in ('Vanity Fair','Moby Dick, or White Whale')
+group by bookName
+HAVING kol >= 2
+-------------------------------------
+SELECT
+PublisherId,PublisherName,telepfone
+FROM 
+publisher
+RIGHT JOIN orders USING(PublisherId)
+WHERE dateIS NULL
+ORDER BY date
+LIMIT 8;
+-------------------------------------
+CREATE TABLE new_book (
+	id integer PRIMARY KEY,
+	first_name text NOT NULL,
+	last_name text NOT NULL,
+	phone text NOT NULL,
+	email text NOT NULL
+);
+
+CREATE TRIGGER validate_email_before_insert_book 
+   BEFORE INSERT ON new_book
+BEGIN
+   SELECT
+      CASE
+	 WHEN NEW.email NOT LIKE '%_@_%.__%' THEN
+   	  RAISE (ABORT,'Invalid email address')
+      END;
+END;
